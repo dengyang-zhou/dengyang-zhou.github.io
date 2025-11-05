@@ -22,7 +22,7 @@
     .btn{padding:10px 14px;border-radius:10px;border:1px solid var(--border);font-weight:600}
     .btn.primary{background:var(--brand);border-color:transparent}
     .portrait{aspect-ratio:1/1;overflow:hidden;display:grid;place-items:center}
-    .portrait img{width:80%;height:80%;object-fit:cover;border-radius:10px;}
+    .portrait img{width:50%;height:50%;object-fit:cover;border-radius:10px;}
     .section-title{margin:10px 0 10px;font-size:20px}
     .skills,.projects{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
     .pill{grid-column:span 3;padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted);text-align:center}
@@ -30,6 +30,17 @@
     .project .thumb{height:150px;background:#0e1218;border:1px solid var(--border);border-radius:10px;margin-bottom:10px;display:grid;place-items:center;color:var(--muted)}
     footer{padding:36px 0 60px;color:var(--muted);text-align:center}
     @media(max-width:900px){.hero{grid-template-columns:1fr}.pill{grid-column:span 6}.project{grid-column:span 12}}
+    /* Make project titles stand out */
+    .project h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;}
+    /* Make project description smaller / lighter */
+    .project p {
+    margin: 0 0 6px;
+    font-size: 14px;
+    color: #c7cdd6;}
   </style>
 </head>
 <body>
