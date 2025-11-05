@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>YOUR_NAME · Portfolio</title>
-  <meta name="description" content="YOUR_NAME — TAGLINE. Based in CITY." />
+  <title>Dengyang Zhou · Portfolio</title>
+  <meta name="description" content="Dengyang Zhou — Software Systems Engineering MSc (RWTH Aachen). LLM engineering · Cloud & CI/CD. Based in Aachen, Germany." />
   <style>
     :root { --bg:#0b0d10; --text:#e7edf3; --muted:#9aa4af; --border:#1f2530; --brand:#4f46e5; }
     *{box-sizing:border-box} body{margin:0;font-family:system-ui,Inter,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text);}
@@ -22,7 +22,7 @@
     .btn{padding:10px 14px;border-radius:10px;border:1px solid var(--border);font-weight:600}
     .btn.primary{background:var(--brand);border-color:transparent}
     .portrait{aspect-ratio:1/1;overflow:hidden;display:grid;place-items:center}
-    .portrait img{width:100%;height:100%;object-fit:cover}
+    .portrait img{width:80%;height:80%;object-fit:cover;border-radius:10px;}
     .section-title{margin:10px 0 10px;font-size:20px}
     .skills,.projects{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
     .pill{grid-column:span 3;padding:8px 12px;border-radius:999px;border:1px solid var(--border);color:var(--muted);text-align:center}
@@ -35,7 +35,7 @@
 <body>
   <header>
     <div class="container nav">
-      <div class="brand">YOUR_NAME</div>
+      <div class="brand">Dengyang Zhou</div>
       <nav class="links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -48,37 +48,44 @@
   <main class="container">
     <section class="hero">
       <div class="card">
-        <h1>Hi, I’m YOUR_NAME.</h1>
-        <div class="subtitle">TAGLINE · Based in CITY</div>
-        <p>I focus on STACK_LIST. I build reliable, user-centric products and enjoy collaborating in cross‑functional teams.</p>
+        <h1>Hi, I’m Dengyang Zhou.</h1>
+        <div class="subtitle">Software Systems Engineering MSc (RWTH Aachen) · LLM Engineering · Cloud & CI/CD · Based in Aachen, Germany</div>
+        <p>I build microservice‑based applications and deploy LLMs on HPC infrastructure. Comfortable across Python/Java/TypeScript and connecting local–remote LLM environments with pragmatic DevOps.</p>
         <div class="cta">
           <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="mailto:EMAIL">Email</a>
-          <a class="btn" href="GITHUB_URL" target="_blank">GitHub</a>
-          <a class="btn" href="LINKEDIN_URL" target="_blank">LinkedIn</a>
+          <a class="btn" href="mailto:zhoudengyang@outlook.com">Email</a>
+          <a class="btn" href="https://github.com/dengyang-zhou" target="_blank">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/dengyangzhou/" target="_blank">LinkedIn</a>
         </div>
       </div>
       <div class="card portrait">
-        <img src="portrait.png" alt="Portrait of YOUR_NAME" />
+        <img src="portrait.png" alt="Portrait of Dengyang Zhou" />
       </div>
     </section>
 
     <section id="about">
       <h2 class="section-title">About</h2>
       <div class="card">
-        <p>Brief intro: 1–2 sentences about your background (e.g., Informatics Master student), your strengths, and what roles you’re seeking (e.g., Cloud / SWE / Data).</p>
+        <p>Master’s student in Software Systems Engineering (Grade 1.6) at RWTH Aachen. Hands‑on experience in microservices, LLM deployment on HPC with Ollama + ngrok tunneling, and CI/CD automation on GitLab. Passionate about scalable intelligent systems and practical DevOps.</p>
+        <p><strong>Education:</strong> RWTH Aachen (M.Sc., 2023–present); Queen Mary University of London (B.Sc. Internet of Things, First Class) / BUPT Joint Program.</p>
       </div>
     </section>
 
     <section id="skills">
       <h2 class="section-title">Skills</h2>
       <div class="skills">
-        <div class="pill">Next.js</div>
-        <div class="pill">TypeScript</div>
         <div class="pill">Python</div>
+        <div class="pill">Java</div>
+        <div class="pill">TypeScript/JavaScript</div>
+        <div class="pill">C/C++</div>
+        <div class="pill">SQL</div>
+        <div class="pill">Node.js</div>
+        <div class="pill">Next.js</div>
+        <div class="pill">Electron</div>
         <div class="pill">Docker</div>
-        <div class="pill">PostgreSQL</div>
-        <div class="pill">CI/CD</div>
+        <div class="pill">GitLab CI/CD</div>
+        <div class="pill">Ollama · MCP</div>
+        <div class="pill">HPC · ngrok</div>
       </div>
     </section>
 
@@ -86,17 +93,29 @@
       <h2 class="section-title">Projects</h2>
       <div class="projects">
         <article class="project">
-          <div class="thumb">Project One</div>
+          <div class="thumb">Virtual Personal Assistant</div>
           <div class="card">
-            <h3>PROJECT_1_NAME</h3>
-            <p>One‑line what/impact + your role. <a href="PROJECT_1_CODE" target="_blank">Code</a> · <a href="PROJECT_1_DEMO" target="_blank">Demo</a></p>
+            <h3>Virtual Personal Assistant — RWTH Lab</h3>
+            <p>LLM assistant with Electron → API Gateway → MCP servers → HPC‑hosted LLMs via Ollama and secure ngrok tunneling. Designed GitLab CI/CD and improved release reliability.</p>
+            <p><a href="https://github.com/dengyang-zhou/VirtualPersonalAssistant" target="_blank">Code</a></p>
           </div>
         </article>
+
         <article class="project">
-          <div class="thumb">Project Two</div>
+          <div class="thumb">Airport Management</div>
           <div class="card">
-            <h3>PROJECT_2_NAME</h3>
-            <p>One‑line what/impact + your role. <a href="PROJECT_2_CODE" target="_blank">Code</a> · <a href="PROJECT_2_DEMO" target="_blank">Demo</a></p>
+            <h3>Airport Management System — QMUL Lab</h3>
+            <p>Agile/Scrum project for airport resource scheduling and booking. Built minimal UI, maintained sprint planning, retrospectives, and documentation.</p>
+            <p><a href="https://github.com/dengyang-zhou/SoftwareEngineer-Airline" target="_blank">Code</a></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="thumb">DNS Relay</div>
+          <div class="card">
+            <h3>DNS Relay System — QMUL Lab</h3>
+            <p>Local DNS relay with cached domain–IP mapping to reduce latency. Handled concurrent requests via multithreaded socket programming in C.</p>
+            <p><a href="https://github.com/Aaaazdy/DNS_relay_project" target="_blank">Code</a></p>
           </div>
         </article>
       </div>
@@ -105,17 +124,17 @@
     <section id="contact">
       <h2 class="section-title">Contact</h2>
       <div class="card">
-        <p>Open to internships and collaborations. Prefer EMAIL or LinkedIn for a quick response.</p>
+        <p>Open to internships and full‑time roles in software/LLM/cloud. For a quick response, email or message me on LinkedIn.</p>
         <div class="cta">
-          <a class="btn primary" href="mailto:EMAIL">Email Me</a>
-          <a class="btn" href="LINKEDIN_URL" target="_blank">LinkedIn</a>
+          <a class="btn primary" href="mailto:zhoudengyang@outlook.com">Email Me</a>
+          <a class="btn" href="https://www.linkedin.com/in/dengyangzhou/" target="_blank">LinkedIn</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">© <span id="year"></span> YOUR_NAME</div>
+    <div class="container">© <span id="year"></span> Dengyang Zhou</div>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
 </body>
